@@ -1,0 +1,151 @@
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$pale-orange: hsl(33, 100%, 98%);
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	font-family: "DM Sans", sans-serif;
+	background-color: $cream;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	background-color: $soft-red;
+	width: 25%;
+	min-width: 330px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	.balance {
+		margin-left: 30px;
+	}
+	p:nth-child(1) {
+		font-size: 14px;
+		color: $pale-orange;
+		margin-bottom: 5px;
+		margin-top: 15px;
+	}
+	p:nth-child(2) {
+		color: $pale-orange;
+		font-weight: 700;
+		font-size: 25px;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	img {
+		width: 50px;
+		margin-right: 30px;
+		cursor: pointer;
+	}
+}
+
+main {
+	background-color: $pale-orange;
+	width: 25%;
+	min-width: 330px;
+	width: 25%;
+	border-radius: 15px;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 30px;
+	h1 {
+		color: $dark-brown;
+		font-size: 25px;
+		margin-top: 0;
+	}
+	.divider {
+		background-color: $cream;
+		height: 2px;
+	}
+}
+
+table {
+	width: 100%;
+	border-spacing: 12px;
+	table-layout: fixed;
+}
+.chart-spendings {
+	height: 180px;
+	vertical-align: bottom;
+}
+.chart-spendings-value {
+	margin: 0;
+	position: relative;
+	left: -7px;
+	bottom: 3px;
+	color: $pale-orange;
+	background-color: $dark-brown;
+	text-align: center;
+	border-radius: 5px;
+	width: 140%;
+	line-height: 30px;
+	height: 30px;
+	// display: none;
+}
+.chart-spendings div {
+	background-color: $soft-red;
+	height: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.chart-days {
+	text-align: center;
+	color: $medium-brown;
+}
+
+.total {
+	display: flex;
+	justify-content: space-between;
+	p {
+		color: $medium-brown;
+	}
+}
+.total-month {
+	p {
+		margin-bottom: 0;
+	}
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+		color: $dark-brown;
+		font-weight: 700;
+		font-size: 40px;
+	}
+}
+.total-evolution {
+	align-self: end;
+	> * {
+		margin: 0;
+	}
+	p:nth-child(1) {
+		color: $dark-brown;
+		font-weight: 700;
+		text-align: end;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.main-content,
+	header .balance,
+	header img {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
