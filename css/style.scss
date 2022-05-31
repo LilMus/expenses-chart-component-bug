@@ -69,6 +69,7 @@ main {
 		color: $dark-brown;
 		font-size: 25px;
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 	.divider {
 		background-color: $cream;
@@ -97,13 +98,17 @@ table {
 	width: 140%;
 	line-height: 30px;
 	height: 30px;
-	// display: none;
+	opacity: 0;
+	transition: opacity;
+	transition-duration: 0.3s;
 }
 .chart-spendings div {
 	background-color: $soft-red;
 	height: 100%;
 	border-radius: 10px;
 	cursor: pointer;
+	transition: opacity;
+	transition-duration: 0.3s;
 }
 .chart-days {
 	text-align: center;
@@ -147,5 +152,8 @@ table {
 	header img {
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	.chart-spendings-value {
+		font-size: 11px;
 	}
 }

@@ -62,6 +62,7 @@ main {
   color: hsl(25deg, 47%, 15%);
   font-size: 25px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .main-content .divider {
   background-color: hsl(27deg, 66%, 92%);
@@ -91,6 +92,9 @@ table {
   width: 140%;
   line-height: 30px;
   height: 30px;
+  opacity: 0;
+  transition: opacity;
+  transition-duration: 0.3s;
 }
 
 .chart-spendings div {
@@ -98,6 +102,8 @@ table {
   height: 100%;
   border-radius: 10px;
   cursor: pointer;
+  transition: opacity;
+  transition-duration: 0.3s;
 }
 
 .chart-days {
@@ -143,6 +149,8 @@ header img {
     margin-left: 10px;
     margin-right: 10px;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+  .chart-spendings-value {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */
