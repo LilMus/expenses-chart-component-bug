@@ -100,3 +100,4 @@ function setData(datas) {
 
 getData();
 addMouseoverEvent();
+addMouseleaveEvent();
